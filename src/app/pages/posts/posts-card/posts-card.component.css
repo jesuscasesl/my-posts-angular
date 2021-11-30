@@ -1,0 +1,68 @@
+.container__card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 21rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.5rem;
+  min-height: 22rem;
+}
+.post__info {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.card__user {
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  font-size: 13px;
+  margin-top: 1rem;
+}
+
+.user__title {
+  margin: 0;
+  color: #cd5b9f;
+}
+
+.user__info {
+  color: #545d7a;
+}
+
+.container__btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.tag-teal {
+  background-color: #47bcd4;
+}
+
+.comments {
+  margin-top: 1rem;
+}
+
+.comments__comment {
+  margin: 0;
+}

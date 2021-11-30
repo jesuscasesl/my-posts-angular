@@ -1,0 +1,13 @@
+<div class="container__card">
+	<a [routerLink]="['/users/details', user.id]">
+		<h3 class="user__title">{{ user.name }} - <span class="tag tag-pink">{{ user.username }}</span></h3>
+	</a>
+
+	<div class="container__info">
+		<small class="user__info">{{ user.email }}</small>
+	</div>
+
+	<div class="container__info">
+		<small class="user__info">{{ user.phone }}</small>
+	</div>
+</div>

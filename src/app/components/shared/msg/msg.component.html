@@ -1,0 +1,7 @@
+<div *ngIf="showMsgOK | async" class="container__msg container__msg--success">
+	<span>Se procesado correctmente</span>
+</div>
+
+<div *ngIf="showMsgError | async" class="container__msg container__msg--error">
+	<span>Se ha producido un error</span>
+</div>

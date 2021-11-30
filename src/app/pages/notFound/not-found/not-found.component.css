@@ -1,0 +1,11 @@
+.container__notFound {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 80vh;
+}
+
+.notFounf__title {
+	color: #cd5b9f;
+}

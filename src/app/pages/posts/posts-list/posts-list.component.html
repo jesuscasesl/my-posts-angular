@@ -1,0 +1,24 @@
+<div class="container__list">
+	<form class="form__filter">
+		<label for="Name">Filter by name: </label>
+		<input type="text" placeholder="name" id="Name" name="Name" (keyup)="handleChanged($event)"/>
+	</form>
+
+	<div class="container__new">
+		<a [routerLink]="['/posts/create']">
+			<span class="new__btn">New Post</span>
+		</a>
+	</div>
+
+	<ul
+		infiniteScroll
+		(scrolled)="onScrollDown()"
+		class="container__card">
+		<li *ngFor="let post of posts" class="card__item">
+			<app-posts-card [post]="post"></app-posts-card>
+		</li>
+	</ul>
+
+<button *ngIf="showButton" (click)="onScrollTop()" class="btnUp">UP</button>
+
+</div>

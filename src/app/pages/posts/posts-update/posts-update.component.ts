@@ -1,0 +1,34 @@
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { PostsService } from 'src/app/services/posts/posts.service';
+
+@Component({
+  selector: 'app-posts-update',
+  templateUrl: './posts-update.component.html',
+  styleUrls: ['./posts-update.component.css']
+})
+export class PostsUpdateComponent implements OnInit {
+  type: string = "update";
+  data: any = { };
+  id: any;
+  post: any;
+
+  constructor(
+    private route: ActivatedRoute,
+    private postsService: PostsService
+  ) { }
+
+  ngOnInit(): void {
+    this.getPost();
+  }
+
+  getPost(): void {
+    this.id = Number(this.route.snapshot.paramMap.get('id'));
+
+    const data = this.postsService.getDataPostById(this.id)
+    data.then((response: any) => {
+      this.post = response;
+    })
+  }
+}

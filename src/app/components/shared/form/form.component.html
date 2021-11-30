@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="container__form">
+		<h3 class="update__title">{{ titleForm }}</h3>
+		<form class="update__form" [formGroup]="formGroup" (submit)="handleSubmit($event)">
+			<input class="form__title" type="text" placeholder="Title" formControlName="title" name="title" (keyup)="handleChangedTitle($event)"/>
+			<div *ngIf="formGroup.get('title').hasError('required') && formGroup.get('title').touched">
+				<span class="error__required">Title Required</span>
+			</div>
+			<textarea class="form__body" rows="10" cols="50" placeholder="Body" formControlName="body" name="body" (keyup)="handleChangedtext($event)" ></textarea>
+			<div *ngIf="formGroup.get('body').hasError('required') && formGroup.get('body').touched">
+				<span class="error__required">Title Required</span>
+			</div>
+			<button class="form__btn" [disabled]="formGroup.invalid">Submit</button>
+		</form>
+	</div>
+</div>

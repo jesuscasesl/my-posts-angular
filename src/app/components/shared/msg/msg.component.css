@@ -1,0 +1,16 @@
+.container__msg {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	color: #fff;
+	padding: 1rem;
+	border-radius: 5px;
+}
+
+.container__msg--success {
+	background: #47bcd4;
+}
+
+.container__msg--error {
+	background: #ea5353;
+}

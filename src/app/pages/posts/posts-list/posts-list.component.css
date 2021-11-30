@@ -1,0 +1,42 @@
+.form__filter {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 2rem;
+}
+
+.form__filter label {
+  margin-right: 0.5rem;
+}
+
+.container__new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.new__btn {
+  cursor: pointer;
+  padding: 0.3rem;
+  background-color: #cd5b9f;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.container__card {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.card__item {
+	margin: 1rem;
+}
+
+.btnUp {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+}

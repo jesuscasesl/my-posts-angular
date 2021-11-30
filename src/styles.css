@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+--red: hsl(0, 78%, 62%);
+	--cyan: hsl(180, 62%, 55%);
+	--orange: hsl(34, 97%, 64%);
+	--blue: hsl(212, 86%, 64%);
+	--varyDarkBlue: hsl(234, 12%, 34%);
+	--grayishBlue: hsl(229, 6%, 66%);
+	--veryLightGray: hsl(0, 0%, 98%);
+	--weight1: 200;
+	--weight2: 400;
+	--weight3: 600;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f8fc;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+a {
+	color: #10182f;
+	text-decoration: none;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}

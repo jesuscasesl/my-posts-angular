@@ -1,0 +1,33 @@
+<div class="container__card">
+	<div class="card__post">
+		<a [routerLink]="['/posts/details', post.id]">
+			<h2 class="post__title">{{ post.title }}</h2>
+		</a>
+		<p class="post__info">{{ post.body }}</p>
+	</div>
+
+	<div class="card__user">
+		<a [routerLink]="['/users/details', post.user.id]">
+			<h3 class="user__title">{{ post.user.name }}</h3>
+		</a>
+		<div>
+			<small class="user__info">{{ post.user.email }}</small>
+		</div>
+	</div>
+
+	<div class="container__btn">
+		<span class="tag tag-pink" (click)="handleClickBtn()">{{ textBtn }}</span>
+		<a [routerLink]="['/posts/update', post.id]">
+			<span class="tag tag-teal">Update Post</span>
+		</a>
+	</div>
+
+	<div *ngIf="showComments" class="container__comments">
+		<ul>
+			<li *ngFor="let comment of post.comments.data" class="comments">
+				<h4 class="comments__title">{{ comment.name }} ({{ comment.email }})</h4>
+				<p class="comments__comment">{{ comment.body }}</p>
+			</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+.container__home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.home__tile {
+	text-align: center;
+	padding: 3rem;
+	font-size: 2.5rem;
+}
+
+.home__ul {
+	text-align: center;
+}
+
+.home__element {
+	margin: 0.5rem 0;
+	font-size: 2rem;
+}
+
+
+a:hover, a.active {
+  color: #cd5b9f;
+	font-weight: bold;
+}
